@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+	int x=0,y=0;
+	char c='0';
+	scanf("%d %c %d",&x,&c,&y);
+	if(c == '+')
+	printf("%d",x+y);
+	else if(c == '-')
+	printf("%d",x-y);
+	else if(c == '*')
+	printf("%d",x*y);
+	else if(c == '/')
+	printf("%d",x/y);
+	else if(c == '%')
+	printf("%d",x%y);
+	else printf("ERROR");
+	return 0;
+}
