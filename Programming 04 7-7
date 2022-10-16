@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int n=0;
+	scanf("%d",&n);
+	
+	for(int i=0;i<n;i++)
+	{
+		printf("pow(2,%d) = %d\n",i,(int)pow(2,i));
+	}
+	printf("pow(2,%d) = %d\n",n,(int)pow(2,n));
+	
+	return 0;
+} 
