@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int n=0;
+	scanf("%d",&n);
+	
+	unsigned long long product=1;
+	if(n!=0)
+	{
+	   for(int i=1;i<=n;i++)
+	   product *= (long long)i;	
+	}
+	
+	printf("product = %llu",product);
+	
+	return 0;
+} 
