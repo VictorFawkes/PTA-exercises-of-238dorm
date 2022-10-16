@@ -1,0 +1,29 @@
+#include <stdio.h>
+void Price(int n);
+int main()
+{
+int a[5];
+int i=0;
+while( ( ( scanf("%d",&a[i]) ) != 0) && i<=3)
+i++;
+printf("[1] crisps\n");
+printf("[2] popcorn\n");
+printf("[3] chocolate\n");
+printf("[4] cola\n");
+printf("[0] exit\n");
+for(int j=0;j<5;j++)
+{
+	if(a[j] == 0) break;
+	Price(a[j]);	
+}
+printf("Thanks");
+	return 0;
+}
+void Price(int n)
+{
+	if(1 == n) printf("price = 3.0\n");
+	else if(2 == n) printf("price = 2.5\n");
+	else if(3 == n) printf("price = 4.0\n");
+	else if(4 == n) printf("price = 3.5\n");
+	else printf("price = 0.0\n");
+}
