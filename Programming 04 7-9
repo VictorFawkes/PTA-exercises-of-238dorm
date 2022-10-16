@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int n=0;
+	scanf("%d",&n);
+	if(n != 0)
+	{
+		int a[n];
+		for(int i=0;i<n;i++)
+		scanf("%d",&a[i]);
+		
+		int count=0,sum=0;
+		for(int j=0;j<n;j++)
+		{
+			if(a[j] < 60)
+			count++;
+			sum += a[j];
+		} 
+		
+		printf("average = %.2f\n",(double)sum/(double)n);
+		printf("count = %d",count);
+	}
+	else
+	
+	{
+		printf("average = 0.00\n");
+		printf("count = 0");
+	}
+	return 0;
+} 
